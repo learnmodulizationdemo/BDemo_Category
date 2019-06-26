@@ -1,1 +1,1 @@
-pod "BDemo_Category"
+# BDemo_Category
