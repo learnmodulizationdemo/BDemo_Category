@@ -13,6 +13,8 @@
 		2F13475322C3411600BA38AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F13475222C3411600BA38AB /* Assets.xcassets */; };
 		2F13475622C3411600BA38AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F13475422C3411600BA38AB /* LaunchScreen.storyboard */; };
 		2F13475922C3411600BA38AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13475822C3411600BA38AB /* main.m */; };
+		2F13476522C3433F00BA38AB /* CTMediator+BDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13476422C3433F00BA38AB /* CTMediator+BDemo.m */; };
+		AC38C641827193995E593F2C /* Pods_BDemo_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B94604A7D3254BF74416BE /* Pods_BDemo_Category.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		2F13475522C3411600BA38AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F13475722C3411600BA38AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F13475822C3411600BA38AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F13476322C3433F00BA38AB /* CTMediator+BDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BDemo.h"; sourceTree = "<group>"; };
+		2F13476422C3433F00BA38AB /* CTMediator+BDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BDemo.m"; sourceTree = "<group>"; };
+		63B94604A7D3254BF74416BE /* Pods_BDemo_Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDemo_Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		818C1C3FC2EEEEB201B7482E /* Pods-BDemo_Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDemo_Category.debug.xcconfig"; path = "Target Support Files/Pods-BDemo_Category/Pods-BDemo_Category.debug.xcconfig"; sourceTree = "<group>"; };
+		F91AC7B4C11FF437937C5D17 /* Pods-BDemo_Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDemo_Category.release.xcconfig"; path = "Target Support Files/Pods-BDemo_Category/Pods-BDemo_Category.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC38C641827193995E593F2C /* Pods_BDemo_Category.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				2F13474822C3411500BA38AB /* BDemo_Category */,
 				2F13474722C3411500BA38AB /* Products */,
+				8C0556CC5AFA8BC4E1FFD3CD /* Pods */,
+				A621BDD0B3B652431BD418F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,7 @@
 		2F13474822C3411500BA38AB /* BDemo_Category */ = {
 			isa = PBXGroup;
 			children = (
+				2F13475F22C3425300BA38AB /* BDemo_Category */,
 				2F13474922C3411500BA38AB /* AppDelegate.h */,
 				2F13474A22C3411500BA38AB /* AppDelegate.m */,
 				2F13474C22C3411500BA38AB /* ViewController.h */,
@@ -71,6 +82,32 @@
 			path = BDemo_Category;
 			sourceTree = "<group>";
 		};
+		2F13475F22C3425300BA38AB /* BDemo_Category */ = {
+			isa = PBXGroup;
+			children = (
+				2F13476322C3433F00BA38AB /* CTMediator+BDemo.h */,
+				2F13476422C3433F00BA38AB /* CTMediator+BDemo.m */,
+			);
+			path = BDemo_Category;
+			sourceTree = "<group>";
+		};
+		8C0556CC5AFA8BC4E1FFD3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				818C1C3FC2EEEEB201B7482E /* Pods-BDemo_Category.debug.xcconfig */,
+				F91AC7B4C11FF437937C5D17 /* Pods-BDemo_Category.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A621BDD0B3B652431BD418F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B94604A7D3254BF74416BE /* Pods_BDemo_Category.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F13475C22C3411600BA38AB /* Build configuration list for PBXNativeTarget "BDemo_Category" */;
 			buildPhases = (
+				910894DF0D7C603D867C2231 /* [CP] Check Pods Manifest.lock */,
 				2F13474222C3411500BA38AB /* Sources */,
 				2F13474322C3411500BA38AB /* Frameworks */,
 				2F13474422C3411500BA38AB /* Resources */,
+				228F704936B3099346CA2479 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +175,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		228F704936B3099346CA2479 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BDemo_Category/Pods-BDemo_Category-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BDemo_Category/Pods-BDemo_Category-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		910894DF0D7C603D867C2231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BDemo_Category-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F13474222C3411500BA38AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +230,7 @@
 				2F13474E22C3411500BA38AB /* ViewController.m in Sources */,
 				2F13475922C3411600BA38AB /* main.m in Sources */,
 				2F13474B22C3411500BA38AB /* AppDelegate.m in Sources */,
+				2F13476522C3433F00BA38AB /* CTMediator+BDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +370,13 @@
 		};
 		2F13475D22C3411600BA38AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818C1C3FC2EEEEB201B7482E /* Pods-BDemo_Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDemo_Category/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +389,13 @@
 		};
 		2F13475E22C3411600BA38AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91AC7B4C11FF437937C5D17 /* Pods-BDemo_Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDemo_Category/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
